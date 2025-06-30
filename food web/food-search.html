@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Search - Foodie</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="site-top-nav" class="navbar-menu navbar-fixed-top">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo" class="img-responsive"width="50px">
+        </a>
+      </div>
+      <div class="menu text-right">
+        <ul>
+          <li><a class="hvr-underline-from-center" href="index.html">Home</a></li>
+          <li><a class="hvr-underline-from-center" href="categories.html">Categories</a></li>
+          <li><a class="hvr-underline-from-center" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Section -->
+  <section class="food-search text-center">
+    <div class="container">
+      <form action="food-search.html">
+        <input type="search" name="search" placeholder="Search for Food..." required />
+        <input type="submit" value="Search" class="btn-primary" />
+      </form>
+    </div>
+  </section>
+
+  <!-- Food Search Results -->
+  <section class="food-menu">
+    <div class="container">
+      <h2 class="text-center">Food Found</h2>
+      <div class="grid-2">
+        
+        <!-- Example Search Result -->
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img src="img/food/p1.jpg" alt="Pizza" class="img-responsive img-curve">
+          </div>
+          <div class="food-menu-desc">
+            <h4>Italian Pizza</h4>
+            <p class="food-price">₹250</p>
+            <p class="food-details">Freshly baked, cheesy, and loaded with toppings.</p>
+            <input type="number" value="1" min="1" />
+            <input type="submit" class="btn-primary" value="Add To Cart" />
+          </div>
+        </div>
+
+        <!-- Add more results if needed -->
+        <div class="food-menu-box">
+          <div class="food-menu-img">
+            <img src="img/food/b1.jpg" alt="Burger" class="img-responsive img-curve">
+          </div>
+          <div class="food-menu-desc">
+            <h4>Cheese Burger</h4>
+            <p class="food-price">₹180</p>
+            <p class="food-details">Juicy patty with cheese, fresh veggies, and sauces.</p>
+            <input type="number" value="1" min="1" />
+            <input type="submit" class="btn-primary" value="Add To Cart" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center" style="padding: 30px 0; background: #2f3542; color: white;">
+    <p>© 2025 Foodie India - Search Results Page</p>
+  </footer>
+
+</body>
+</html>
