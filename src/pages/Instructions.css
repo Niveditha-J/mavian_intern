@@ -1,0 +1,81 @@
+/* Instructions.css */
+
+.instruction-container {
+  min-height: 100vh;
+  padding: 60px 30px;
+  background-image: url('/src/assets/img/university.png'); /* Ensure this image exists in public/images */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+/* Optional dark overlay for readability */
+.instruction-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Floating Card Effect */
+.section-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.95;
+}
+
+/* Zoom & Fade on Hover */
+.section-box:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+.section-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.section-box ul {
+  padding-left: 20px;
+}
+
+.section-box li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.section-box p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.quick-links li a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.quick-links li a:hover {
+  text-decoration: underline;
+  color: #003366;
+}
